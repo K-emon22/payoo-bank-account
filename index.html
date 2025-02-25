@@ -21,20 +21,24 @@
 
 
 
-<div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mx-auto -mt-30 rounded-3xl">
+<form class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mx-auto -mt-30 rounded-3xl">
     <div class="card-body ">
       <fieldset class="fieldset">
         <label class="fieldset-label font-bold text-black">Mobile Number</label>
-        <input class="rounded-full p-5 h-10" type="email" class="input" placeholder="Enter your number" />
+        <input id="account-num" value="01915368829" class="rounded-full p-5 h-10" type="number" class="input" placeholder="Enter your number"  required/>
         <label class="fieldset-label font-bold text-black">4 Digit Pin</label>
-        <input class="rounded-full p-5 h-10" type="text" class="input" placeholder="Enter 4 Digit Pin" />
+        <input id="password" value="1234" class="rounded-full p-5 h-10" type="text" class="input" placeholder="Enter 4 Digit Pin" required />
         <div><a class="link link-hover">Forgot password?</a></div>
-        <button id="login-button" class="btn btn-neutral rounded-full bg-blue-600 border-none shadow-none hover:bg-blue-700 mt-4">Login</button>
+        <button id="login-button"  class="btn btn-neutral rounded-full bg-blue-600 border-none shadow-none hover:bg-blue-700 mt-4">Login</button>
       </fieldset>
     </div>
-  </div>
+  </form>
 
 </section>
+
+
+<!-- javascript style  -->
+ <script src="js/index.js"></script>
 
 </body>
 </html>
