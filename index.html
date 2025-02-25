@@ -1,44 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body>
-    
-<section class="max-w-md min-h-screen mx-auto bg-red-50">
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <section class="max-w-md min-h-screen mx-auto bg-red-50">
+      <div class="flex flex-col">
+        <img
+          class="w-4/6 flex self-center m-0 mt-20"
+          src="image/bg.png"
+          alt=""
+        />
+        <img
+          class="w-2/15 flex self-center absolute mt-30"
+          src="image/Group.png"
+          alt=""
+        />
+      </div>
 
+      <form
+        class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mx-auto -mt-30 rounded-3xl"
+      >
+        <div class="card-body">
+          <fieldset class="fieldset">
+            <label class="fieldset-label font-bold text-black"
+              >Mobile Number</label
+            >
+            <input
+              id="account-num"
+              value="01915368829"
+              class="rounded-full p-5 h-10"
+              type="number"
+              class="input"
+              placeholder="Enter your number"
+              required
+            />
+            <label class="fieldset-label font-bold text-black"
+              >4 Digit Pin</label
+            >
+            <input
+              id="password"
+              value="1234"
+              class="rounded-full p-5 h-10"
+              type="text"
+              class="input"
+              placeholder="Enter 4 Digit Pin"
+              required
+            />
+            <div><a class="link link-hover">Forgot password?</a></div>
+            <button
+              id="login-button"
+              class="btn btn-neutral rounded-full bg-blue-600 border-none shadow-none hover:bg-blue-700 mt-4"
+            >
+              Login
+            </button>
+          </fieldset>
+        </div>
+      </form>
+    </section>
 
-<div class="flex flex-col ">
-    <img class="w-4/6 flex self-center m-0 mt-20" src="image/bg.png" alt="">
-    <img class="w-2/15 flex self-center absolute mt-30 " src="image/Group.png" alt="">
-</div>
-
-
-
-
-
-<form class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mx-auto -mt-30 rounded-3xl">
-    <div class="card-body ">
-      <fieldset class="fieldset">
-        <label class="fieldset-label font-bold text-black">Mobile Number</label>
-        <input id="account-num" value="01915368829" class="rounded-full p-5 h-10" type="number" class="input" placeholder="Enter your number"  required/>
-        <label class="fieldset-label font-bold text-black">4 Digit Pin</label>
-        <input id="password" value="1234" class="rounded-full p-5 h-10" type="text" class="input" placeholder="Enter 4 Digit Pin" required />
-        <div><a class="link link-hover">Forgot password?</a></div>
-        <button id="login-button"  class="btn btn-neutral rounded-full bg-blue-600 border-none shadow-none hover:bg-blue-700 mt-4">Login</button>
-      </fieldset>
-    </div>
-  </form>
-
-</section>
-
-
-<!-- javascript style  -->
- <script src="js/index.js"></script>
-
-</body>
+    <!-- javascript style  -->
+    <script src="js/index.js"></script>
+  </body>
 </html>

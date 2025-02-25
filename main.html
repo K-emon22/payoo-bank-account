@@ -1,11 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="">
+    <section>
+      <nav class="max-w-md mx-auto flex flex-row justify-between my-auto p-5">
+        <div class="flex flex-row gap-5">
+          <div><img class="my-auto flex" src="image/Group.png" alt="" /></div>
+          <div class="flex flex-col my-auto">
+            <h1>$45000</h1>
+            <h2>Available Balance</h2>
+          </div>
+        </div>
 
-</body>
+        <div class="my-auto">
+          <button
+            class="btn btn-primary bg-transparent border-black hover:bg-red-500 hover:text-white hover:border-black shadow-none text-black rounded-xl font-bold"
+          >
+            Log Out <i class="fa-solid fa-right-from-bracket ml-3"></i>
+          </button>
+        </div>
+      </nav>
+
+      <hr class="text-gray-300 max-w-md mx-auto" />
+    </section>
+
+    <section class="max-w-md mx-auto mt-8 rounded-b-3xl pb-10">
+      <div>
+        <h1 class="font-bold text-2xl">🔥 Welcome to Payooo!</h1>
+        <p class="text-gray-500">
+          Enjoy easy and convenient financial services with us. Cashout charge
+          is low and
+        </p>
+      </div>
+
+      <div class="mt-8 grid grid-cols-3 gap-5">
+        <div
+          class="border-1 border-gray-300 flex flex-col items-center justify-center p-5 rounded-3xl"
+        >
+          <img src="image/wallet1.png" alt="" />
+          <h3 class="font-bold text-center">Add Money</h3>
+        </div>
+
+        <div
+          class="border-1 border-gray-300 flex flex-col items-center justify-center p-5 rounded-3xl"
+        >
+          <img src="image/send1.png" alt="" />
+          <h3 class="font-bold text-center">Sent money</h3>
+        </div>
+
+        <div
+          class="border-1 border-gray-300 flex flex-col items-center justify-center p-5 rounded-3xl"
+        >
+          <img src="image/money1.png" alt="" />
+          <h3 class="font-bold text-center">Transfer</h3>
+        </div>
+
+        <div
+          class="border-1 border-gray-300 flex flex-col items-center justify-center p-5 rounded-3xl"
+        >
+          <img src="image/bonus1.png" alt="" />
+          <h3 class="font-bold text-center">Get Bonusy</h3>
+        </div>
+
+        <div
+          class="border-1 border-gray-300 flex flex-col items-center justify-center p-5 rounded-3xl"
+        >
+          <img src="image/purse1.png" alt="" />
+          <h3 class="font-bold text-center">Pay Bill</h3>
+        </div>
+
+        <div
+          class="border-1 border-gray-300 flex flex-col items-center justify-center p-5 rounded-3xl"
+        >
+          <img src="image/transaction1.png" alt="" />
+          <h3 class="font-bold text-center">Transaction</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-md mx-auto rounded-3xl">
+      <div class="hero">
+        <div class="card bg-base-100 w-full max-w-md shrink-0 shadow-2xl">
+          <div class="card-body flex justify-center items-center">
+            <fieldset class="fieldset w-8/10 flex flex-col justify-center">
+              <legend class="text-black font-bold">select bank</legend>
+              <select class="select rounded-xl">
+                <option disabled selected>Pick a Bank</option>
+                <option value="Bkash">Bkash</option>
+                <option value="Nagad">Nagad</option>
+                <option value="Roket">Roket</option>
+                <option value="Upai">Upai</option>
+              </select>
+
+              <label class="fieldset-label font-bold text-black"
+                >Mobile Number</label
+              >
+              <input
+                id="account-num"
+                value="01915368829"
+                class="rounded-xl p-5 h-10"
+                type="number"
+                class="input"
+                placeholder="Enter your number"
+                required
+              />
+
+              <label class="fieldset-label font-bold text-black"
+                >Enter Amount</label
+              >
+              <input
+                id="ammount"
+                value="829"
+                class="rounded-xl p-5 h-10"
+                type="number"
+                class="input"
+                placeholder="Enter your number"
+                required
+              />
+
+              <label class="fieldset-label font-bold text-black"
+                >Enter password</label
+              >
+              <input
+                id="password"
+                value="1234"
+                class="rounded-xl p-5 h-10"
+                type="text"
+                class="input"
+                placeholder="Enter 4 Digit password"
+                required
+              />
+              <div><a class="link link-hover">Forgot password?</a></div>
+              <button
+                id="login-button"
+                class="btn btn-neutral rounded-xl bg-blue-600 border-none shadow-none hover:bg-blue-700 mt-4"
+              >
+                ADD money
+              </button>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
