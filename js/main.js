@@ -11,10 +11,15 @@ document
     const password = document.getElementById("password").value;
     const blocPassword = parseFloat(password);
 
+    if (addAmount === "" || isNaN(blockAddAmount)) {
+      alert("Please add an amount");
+      return;
+    }
+
     if (blocPassword === 1234) {
       const sum = blockAddAmount + blockMainBalance;
       document.getElementById("main-balance").innerText = sum;
     } else {
-      console.log("wrong password");
+      alert("wrong password");
     }
   });
