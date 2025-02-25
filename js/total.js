@@ -20,7 +20,7 @@ document
     document.getElementById("bonous-money-click").style.display = "none";
     document.getElementById("bonus-button").style.backgroundColor = "";
 
-    document.getElementById("pay-money-click").style.display = "";
+    document.getElementById("pay-money-click").style.display = "none";
     document.getElementById("bill-button").style.backgroundColor = "";
   });
 
@@ -40,7 +40,7 @@ document
     document.getElementById("bonous-money-click").style.display = "none";
     document.getElementById("bonus-button").style.backgroundColor = "";
 
-    document.getElementById("pay-money-click").style.display = "";
+    document.getElementById("pay-money-click").style.display = "none";
     document.getElementById("bill-button").style.backgroundColor = "";
   });
 
@@ -60,7 +60,7 @@ document
     document.getElementById("bonous-money-click").style.display = "none";
     document.getElementById("bonus-button").style.backgroundColor = "";
 
-    document.getElementById("pay-money-click").style.display = "";
+    document.getElementById("pay-money-click").style.display = "none";
     document.getElementById("bill-button").style.backgroundColor = "";
   });
 

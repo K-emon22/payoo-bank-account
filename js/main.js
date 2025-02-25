@@ -23,3 +23,30 @@ document
       alert("wrong password");
     }
   });
+
+document
+  .getElementById("cash-out-button")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+
+    const mainBalance2 = document.getElementById("main-balance").innerText;
+    const numberMainBalance2 = parseFloat(mainBalance2);
+
+    const ammount2 = document.getElementById("ammount-2").value;
+    const numberammount2 = parseFloat(ammount2);
+
+    const password2 = document.getElementById("password-2").value;
+
+    if (password2 !== "1234") {
+      alert("Wrong password");
+      return;
+    }
+
+    if (isNaN(numberammount2)) {
+      alert("Please add an amount");
+      return;
+    }
+
+    const left = numberMainBalance2 - numberammount2;
+    document.getElementById("main-balance").innerText = left;
+  });

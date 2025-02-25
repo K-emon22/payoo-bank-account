@@ -21,8 +21,8 @@
         <div class="flex flex-row gap-5">
           <div><img class="my-auto flex" src="image/Group.png" alt="" /></div>
           <div class="flex flex-col my-auto">
-            <h1>
-              $ <span id="main-balance" class="font-bold text-xl">45000 </span>
+            <h1 class="font-bold text-xl">
+              $ <span id="main-balance" class="">45000 </span>
             </h1>
             <h2>Available Balance</h2>
           </div>
@@ -49,44 +49,50 @@
         </p>
       </div>
 
-      <div  class="mt-8 grid grid-cols-3 gap-5">
+      <div class="mt-8 grid grid-cols-3 gap-5">
         <div
-        id="add-money-click-button" class="border-1 border-gray-300 flex flex-col items-center justify-center p-5 rounded-3xl"
+          id="add-money-click-button"
+          class="border-1 border-gray-300 flex flex-col items-center justify-center p-5 rounded-3xl"
         >
           <img src="image/wallet1.png" alt="" />
           <h3 class="font-bold text-center">Add Money</h3>
         </div>
 
         <div
-         id="Cashout-button" class="border-1 border-gray-300 flex flex-col items-center justify-center p-5 rounded-3xl"
+          id="Cashout-button"
+          class="border-1 border-gray-300 flex flex-col items-center justify-center p-5 rounded-3xl"
         >
           <img src="image/send1.png" alt="" />
           <h3 class="font-bold text-center">Cashout</h3>
         </div>
 
         <div
-         id="Transfer-button" class="border-1 border-gray-300 flex flex-col items-center justify-center p-5 rounded-3xl"
+          id="Transfer-button"
+          class="border-1 border-gray-300 flex flex-col items-center justify-center p-5 rounded-3xl"
         >
           <img src="image/money1.png" alt="" />
           <h3 class="font-bold text-center">Transfer</h3>
         </div>
 
         <div
-         id="bonus-button" class="border-1 border-gray-300 flex flex-col items-center justify-center p-5 rounded-3xl"
+          id="bonus-button"
+          class="border-1 border-gray-300 flex flex-col items-center justify-center p-5 rounded-3xl"
         >
           <img src="image/bonus1.png" alt="" />
           <h3 class="font-bold text-center">Get Bonus</h3>
         </div>
 
         <div
-         id="bill-button" class="border-1 border-gray-300 flex flex-col items-center justify-center p-5 rounded-3xl"
+          id="bill-button"
+          class="border-1 border-gray-300 flex flex-col items-center justify-center p-5 rounded-3xl"
         >
           <img src="image/purse1.png" alt="" />
           <h3 class="font-bold text-center">Pay Bill</h3>
         </div>
 
         <div
-         id="transaction-button" class="border-1 border-gray-300 flex flex-col items-center justify-center p-5 rounded-3xl"
+          id="transaction-button"
+          class="border-1 border-gray-300 flex flex-col items-center justify-center p-5 rounded-3xl"
         >
           <img src="image/transaction1.png" alt="" />
           <h3 class="font-bold text-center">Transaction</h3>
@@ -100,7 +106,7 @@
           <div class="card-body flex justify-center items-center">
             <fieldset class="fieldset w-8/10 flex flex-col justify-center">
               <legend class="text-black font-bold">select bank</legend>
-              <select class="select rounded-xl ">
+              <select class="select rounded-xl">
                 <option disabled selected>Pick a Bank</option>
                 <option value="Bkash">Bkash</option>
                 <option value="Nagad">Nagad</option>
@@ -158,214 +164,200 @@
       </div>
     </section>
 
-
-
-
     <section id="cash-out-click" class="max-w-md mx-auto rounded-3xl">
-        <div class="hero">
-          <div class="card bg-base-100 w-full max-w-md shrink-0 shadow-2xl">
-            <div class="card-body flex justify-center items-center">
-              <fieldset class="fieldset w-8/10 flex flex-col justify-center">
-                <label class="fieldset-label font-bold text-black"
-                  >Agend Number</label
-                >
-                <input
-                  id="account-num"
-                  value="01915368829"
-                  class="rounded-xl p-5 h-10"
-                  class="input"
-                  placeholder="Enter your number"
-                  required
-                />
-  
-                <label class="fieldset-label font-bold text-black"
-                  >Enter Amount</label
-                >
-                <input
-                  id="ammount"
-                  class="rounded-xl p-5 h-10"
-                  class="input"
-                  placeholder="Enter your number"
-                  required
-                />
-  
-                <label class="fieldset-label font-bold text-black"
-                  >Enter password</label
-                >
-                <input
-                  id="password"
-                  value="1234"
-                  class="rounded-xl p-5 h-10"
-                  type="text"
-                  class="input"
-                  placeholder="Enter 4 Digit password"
-                  required
-                />
-                <div><a class="link link-hover">Forgot password?</a></div>
-                <button
-                  id="login-button"
-                  class="btn btn-neutral rounded-xl bg-blue-600 border-none shadow-none hover:bg-blue-700 mt-4"
-                >
+      <div class="hero">
+        <div class="card bg-base-100 w-full max-w-md shrink-0 shadow-2xl">
+          <div class="card-body flex justify-center items-center">
+            <fieldset class="fieldset w-8/10 flex flex-col justify-center">
+              <label class="fieldset-label font-bold text-black"
+                >Agend Number</label
+              >
+              <input
+                id="account-num-2"
+                value="01915368829"
+                class="rounded-xl p-5 h-10"
+                class="input"
+                placeholder="Enter your number"
+                required
+              />
+
+              <label class="fieldset-label font-bold text-black"
+                >Enter Amount</label
+              >
+              <input
+                id="ammount-2"
+                class="rounded-xl p-5 h-10"
+                class="input"
+                placeholder="Enter your number"
+                required
+              />
+
+              <label class="fieldset-label font-bold text-black"
+                >Enter password</label
+              >
+              <input
+                id="password-2"
+                value="1234"
+                class="rounded-xl p-5 h-10"
+                type="text"
+                class="input"
+                placeholder="Enter 4 Digit password"
+                required
+              />
+              <div><a class="link link-hover">Forgot password?</a></div>
+              <button
+                id="cash-out-button"
+                class="btn btn-neutral rounded-xl bg-blue-600 border-none shadow-none hover:bg-blue-700 mt-4"
+              >
                 Withdraw Money
-                </button>
-              </fieldset>
-            </div>
+              </button>
+            </fieldset>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
+    <section id="Transfer-money-click" class="max-w-md mx-auto rounded-3xl">
+      <div class="hero">
+        <div class="card bg-base-100 w-full max-w-md shrink-0 shadow-2xl">
+          <div class="card-body flex justify-center items-center">
+            <fieldset class="fieldset w-8/10 flex flex-col justify-center">
+              <label class="fieldset-label font-bold text-black"
+                >User Number</label
+              >
+              <input
+                id="account-num"
+                value="01915368829"
+                class="rounded-xl p-5 h-10"
+                class="input"
+                placeholder="Enter User number"
+                required
+              />
 
+              <label class="fieldset-label font-bold text-black"
+                >Enter Amount</label
+              >
+              <input
+                id="ammount"
+                class="rounded-xl p-5 h-10"
+                class="input"
+                placeholder="Enter your number"
+                required
+              />
 
-
-      <section id="Transfer-money-click" class="max-w-md mx-auto rounded-3xl">
-        <div class="hero">
-          <div class="card bg-base-100 w-full max-w-md shrink-0 shadow-2xl">
-            <div class="card-body flex justify-center items-center">
-              <fieldset class="fieldset w-8/10 flex flex-col justify-center">
-                <label class="fieldset-label font-bold text-black"
-                  >User Number</label
-                >
-                <input
-                  id="account-num"
-                  value="01915368829"
-                  class="rounded-xl p-5 h-10"
-                  class="input"
-                  placeholder="Enter User number"
-                  required
-                />
-  
-                <label class="fieldset-label font-bold text-black"
-                  >Enter Amount</label
-                >
-                <input
-                  id="ammount"
-                  class="rounded-xl p-5 h-10"
-                  class="input"
-                  placeholder="Enter your number"
-                  required
-                />
-  
-                <label class="fieldset-label font-bold text-black"
-                  >Enter password</label
-                >
-                <input
-                  id="password"
-                  value="1234"
-                  class="rounded-xl p-5 h-10"
-                  type="text"
-                  class="input"
-                  placeholder="Enter 4 Digit password"
-                  required
-                />
-                <div><a class="link link-hover">Forgot password?</a></div>
-                <button
-                  id="login-button"
-                  class="btn btn-neutral rounded-xl bg-blue-600 border-none shadow-none hover:bg-blue-700 mt-4"
-                >
-                  Send Now
-                </button>
-              </fieldset>
-            </div>
+              <label class="fieldset-label font-bold text-black"
+                >Enter password</label
+              >
+              <input
+                id="password"
+                value="1234"
+                class="rounded-xl p-5 h-10"
+                type="text"
+                class="input"
+                placeholder="Enter 4 Digit password"
+                required
+              />
+              <div><a class="link link-hover">Forgot password?</a></div>
+              <button
+                id="login-button"
+                class="btn btn-neutral rounded-xl bg-blue-600 border-none shadow-none hover:bg-blue-700 mt-4"
+              >
+                Send Now
+              </button>
+            </fieldset>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="bonous-money-click" class="max-w-md mx-auto rounded-3xl">
-        <div class="hero">
-          <div class="card bg-base-100 w-full max-w-md shrink-0 shadow-2xl">
-            <div class="card-body flex justify-center items-center">
-              <fieldset class="fieldset w-8/10 flex flex-col justify-center">
-                
-                <label class="fieldset-label font-bold text-black"
-                  >Enter bonus cupon</label
-                >
-                <input
-                  id="ammount"
-                  class="rounded-xl p-5 h-10"
-                  class="input"
-                  placeholder="Enter your cupon"
-                  required
-                />
-  
-               
-                
-                <button
-                  id="login-button"
-                  class="btn btn-neutral rounded-xl bg-blue-600 border-none shadow-none hover:bg-blue-700 mt-4"
-                >
+    <section id="bonous-money-click" class="max-w-md mx-auto rounded-3xl">
+      <div class="hero">
+        <div class="card bg-base-100 w-full max-w-md shrink-0 shadow-2xl">
+          <div class="card-body flex justify-center items-center">
+            <fieldset class="fieldset w-8/10 flex flex-col justify-center">
+              <label class="fieldset-label font-bold text-black"
+                >Enter bonus cupon</label
+              >
+              <input
+                id="ammount"
+                class="rounded-xl p-5 h-10"
+                class="input"
+                placeholder="Enter your cupon"
+                required
+              />
+
+              <button
+                id="login-button"
+                class="btn btn-neutral rounded-xl bg-blue-600 border-none shadow-none hover:bg-blue-700 mt-4"
+              >
                 Get Bonus
-                </button>
-              </fieldset>
-            </div>
+              </button>
+            </fieldset>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
+    <section id="pay-money-click" class="max-w-md mx-auto rounded-3xl">
+      <div class="hero">
+        <div class="card bg-base-100 w-full max-w-md shrink-0 shadow-2xl">
+          <div class="card-body flex justify-center items-center">
+            <fieldset class="fieldset w-8/10 flex flex-col justify-center">
+              <label class="font-bold" for="">Select to pay</label>
+              <select class="select rounded-xl">
+                <option disabled selected>Pick a Bank</option>
+                <option value="Bkash">Bkash</option>
+                <option value="Nagad">Nagad</option>
+                <option value="Roket">Roket</option>
+                <option value="Upai">Upai</option>
+              </select>
+              <label class="fieldset-label font-bold text-black"
+                >biller account number</label
+              >
+              <input
+                id="account-num"
+                value="01915368829"
+                class="rounded-xl p-5 h-10"
+                class="input"
+                placeholder="Enter User number"
+                required
+              />
 
-      <section id="pay-money-click" class="max-w-md mx-auto rounded-3xl">
-        <div class="hero">
-          <div class="card bg-base-100 w-full max-w-md shrink-0 shadow-2xl">
-            <div class="card-body flex justify-center items-center">
-              <fieldset class="fieldset w-8/10 flex flex-col justify-center">
-                <label class="font-bold" for="">Select to pay</label>
-                <select class="select rounded-xl ">
-                    <option disabled selected>Pick a Bank</option>
-                    <option value="Bkash">Bkash</option>
-                    <option value="Nagad">Nagad</option>
-                    <option value="Roket">Roket</option>
-                    <option value="Upai">Upai</option>
-                  </select>
-                <label class="fieldset-label font-bold text-black"
-                  >biller account number</label
-                >
-                <input
-                  id="account-num"
-                  value="01915368829"
-                  class="rounded-xl p-5 h-10"
-                  class="input"
-                  placeholder="Enter User number"
-                  required
-                />
-  
-                <label class="fieldset-label font-bold text-black"
-                  >Amount to pay</label
-                >
-                <input
-                  id="ammount"
-                  class="rounded-xl p-5 h-10"
-                  class="input"
-                  placeholder="Enter your number"
-                  required
-                />
-  
-                <label class="fieldset-label font-bold text-black"
-                  >Enter password</label
-                >
-                <input
-                  id="password"
-                  value="1234"
-                  class="rounded-xl p-5 h-10"
-                  type="text"
-                  class="input"
-                  placeholder="Enter 4 Digit password"
-                  required
-                />
-                <div><a class="link link-hover">Forgot password?</a></div>
-                <button
-                  id="login-button"
-                  class="btn btn-neutral rounded-xl bg-blue-600 border-none shadow-none hover:bg-blue-700 mt-4"
-                >
-                  Pay now
-                </button>
-              </fieldset>
-            </div>
+              <label class="fieldset-label font-bold text-black"
+                >Amount to pay</label
+              >
+              <input
+                id="ammount"
+                class="rounded-xl p-5 h-10"
+                class="input"
+                placeholder="Enter your number"
+                required
+              />
+
+              <label class="fieldset-label font-bold text-black"
+                >Enter password</label
+              >
+              <input
+                id="password"
+                value="1234"
+                class="rounded-xl p-5 h-10"
+                type="text"
+                class="input"
+                placeholder="Enter 4 Digit password"
+                required
+              />
+              <div><a class="link link-hover">Forgot password?</a></div>
+              <button
+                id="login-button"
+                class="btn btn-neutral rounded-xl bg-blue-600 border-none shadow-none hover:bg-blue-700 mt-4"
+              >
+                Pay now
+              </button>
+            </fieldset>
           </div>
         </div>
-      </section>
-
-
-
-
+      </div>
+    </section>
 
     <script src="js/main.js"></script>
     <script src="js/total.js"></script>
